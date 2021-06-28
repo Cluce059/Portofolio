@@ -1,19 +1,19 @@
 :root{
-  --pink: rgb(231, 31, 164); 
-  --purple: rgb(177, 22, 177);
-  --blue: rgb(111, 212, 243) ;
+  --pink: rgb(235, 107, 192); 
+  --purple: rgb(43, 6, 43);
+  --blue: rgb(22, 91, 112) ;
 }
 header{
   padding: 20px 35px;
   background-color: var(--purple);
   justify-content: space-between;
   flex-wrap: wrap;
-  position: -webkit-sticky;
+  /*position: -webkit-sticky;
   position: sticky;
-  top:0 ;
+  top:0 ;*/
 }
 header h1{
-  color: black;
+  color:var(--pink);
   font-weight: bold;
   font-size: 36px;
   margin: 0;
@@ -30,14 +30,60 @@ header nav ul{
   list-style: none;
 }
 header nav ul li a{
-  color:red;
+  color: var(--blue);
   padding: 10px 15px;
   font-weight: lighter;
   text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 header nav ul li a:hover{
-  color: pink;
+  color:var(--pink);
   padding: 10px 15px;
   font-weight: lighter;
   text-shadow: none;
+}
+.hero{
+  margin: inherit;
+  padding: 30px;
+  background-image: url("../images/hero-pattern.png");
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  background-attachment: fixed;
+  background-position: 80%;
+}
+.about{
+  background-color:var(--blue);
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.primary-border{
+  border-color: black;
+}
+.profile-img{
+  height: 15px;
+  width: 10px;
+  border-top: black;
+  width: 100%;
+  flex:1 30%;
+}
+.flex-row{
+  display: flex;
+}
+.project{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  flex: 1;
+}
+.profile-text{
+  text-align: left;
+  line-height: 1.5;
+  color: black;
+  width: 90%;
+  display: inline-block; /*fixes offset nature of onlny 90% width*/
+  font-size: 22px;
+  margin: 0 auto;
 }

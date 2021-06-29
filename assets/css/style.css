@@ -1,5 +1,5 @@
 :root{
-  --pink: rgb(235, 107, 192); 
+  --orange: rgb(202, 83, 36); 
   --purple: rgb(43, 6, 43);
   --blue: rgb(22, 91, 112) ;
 }
@@ -53,30 +53,9 @@ header nav ul li a:hover{
   background-position: 80%;
 }
 .about{
+  border-radius: 15px;
   background-color:var(--blue);
   display: flex;
-  flex-wrap: wrap;
-  
-}
-.primary-border{
-  border-color: black;
-}
-.profile-img{
-  height: 15px;
-  width: 10px;
-  border-top: black;
-  width: 100%;
-  flex:1 30%;
-}
-.flex-row{
-  display: flex;
-}
-.project{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: 100%;
-  flex: 1;
 }
 .profile-text{
   text-align: left;
@@ -87,3 +66,43 @@ header nav ul li a:hover{
   font-size: 22px;
   margin: 0 auto;
 }
+.profile-img{
+  display: flex;
+  height: 150px;
+  width: 100px;
+  flex:1 30%;
+}
+.flex-row{
+  display: flex;
+}
+.primary-border{
+  border-color: black;
+}
+.projects{
+  border-radius: 15px;
+  border-color: var(--orange);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  background:var(--blue);
+  margin:0 auto;
+}
+.project{
+  align-items: center;
+  width: 100%;
+  margin: 20px;
+  flex: 1;
+  /*maybeeee add this grid arrangment:
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: 100px;*/
+}
+.project-img img{
+  align-items: flex-start;
+  flex: 1 12%;
+  margin-right: 20px;
+  width: 100%; /*best practice to set in a div and set width to 100%*/
+}
+

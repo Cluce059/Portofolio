@@ -1,11 +1,21 @@
 :root{
-  --orange: rgb(202, 83, 36); 
-  --purple: rgb(43, 6, 43);
-  --blue: rgb(22, 91, 112) ;
+  --primary: rgb(66, 42, 59); 
+  --secondary: rgb(199, 103, 199);
+  --tertiary: rgb(97, 124, 133) ;
+  --statement: rgb(29, 28, 28);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 header{
   padding: 20px 35px;
-  background-color: var(--purple);
+  background-color: var(--secondary);
   justify-content: space-between;
   flex-wrap: wrap;
   /*position: -webkit-sticky;
@@ -13,37 +23,51 @@ header{
   top:0 ;*/
 }
 header h1{
-  color:var(--pink);
+  color:var(--primary);
   font-weight: bold;
   font-size: 36px;
   margin: 0;
 }
 header nav{
   display: flex;
-  margin: 8px 0px;
+  margin: 10px 0px;
+  flex-direction: row-reverse;
 }
-header nav ul{
-  display: flex;
+.navbar-container{
+  align-items: flex-end;
+}
+.navbar-container ul{
+/*display: flex;*/
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
   list-style: none;
+  display: block;
+  list-style-type: disc;
 }
-header nav ul li a{
-  color: var(--blue);
-  padding: 10px 15px;
-  font-weight: lighter;
-  text-shadow: 0 0 10px rgba(0,0,0,0.5);
+.navbar-container ul li{
+  display: inline-block;
+  list-style-type: none;
+  font-size: 14px;
+  margin: 0px;
+  padding: 4px;
+  display: inline-block;
 }
-header nav ul li a:hover{
-  color:var(--pink);
+.navbar-container ul li a{
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  text-shadow: var(--statement);
+}
+.navbar-container ul li a:hover{
+  color: var(--pink);
   padding: 10px 15px;
   font-weight: lighter;
   text-shadow: none;
 }
 .hero{
   margin: inherit;
-  padding: 30px;
+  padding: 50px;
   background-image: url("../images/hero-pattern.png");
   display: flex;
   flex-wrap: wrap;
@@ -54,8 +78,10 @@ header nav ul li a:hover{
 }
 .about{
   border-radius: 15px;
-  background-color:var(--blue);
+  background-color:var(--tertiary);
   display: flex;
+  border: 10px solid var(--statement);
+  margin: 5px;
 }
 .profile-text{
   text-align: left;
@@ -72,25 +98,41 @@ header nav ul li a:hover{
   width: 100px;
   flex:1 30%;
 }
-.flex-row{
+.profile-img img{
+  border: 8px solid var(--statement);
+  border-radius: 15px;
+  margin: 5px;
+}
+.profile-img img:hover{
+  border: 8px solid var(--statement);
+  border-radius: 15px;
+  margin: 5px;
+}
+.flex-column{
   display: flex;
+  padding: 20px;
+  border: 9px solid var(--statement);
+  border-radius:  15px;
+}
+.text-container{
+  border: none;
 }
 .primary-border{
   border-color: black;
 }
 .projects{
   border-radius: 15px;
-  border-color: var(--orange);
+  border-color: var(--primary);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   width: 100%;
-  background:var(--blue);
+  background:var(--tertiary);
   margin:0 auto;
   padding: 0 4px;
 }
 .project{
-  flex: 25%;
+  flex: 60%;
   max-width: 25%;
   padding: 0 4px;
   /*maybeeee add this grid arrangment:
@@ -108,7 +150,21 @@ header nav ul li a:hover{
   vertical-align: middle;
   width: 100%;
 }
-
+footer{
+  background: var(--secondary);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+footer a{
+  text-align: center;
+  color: var(--orange);
+  font-style:oblique;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 24px;
+  padding: solid 12 px var(--secondary);
+}
 @media screen and (max-width: 800px) {
   .project {
     flex: 50%;

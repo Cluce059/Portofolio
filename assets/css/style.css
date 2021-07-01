@@ -87,22 +87,37 @@ header nav ul li a:hover{
   width: 100%;
   background:var(--blue);
   margin:0 auto;
+  padding: 0 4px;
 }
 .project{
-  align-items: center;
-  width: 100%;
-  margin: 20px;
-  flex: 1;
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
   /*maybeeee add this grid arrangment:
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   grid-auto-rows: 100px;*/
 }
-.project-img img{
-  align-items: flex-start;
+.project img{
+  /*align-items: flex-start;
   flex: 1 12%;
   margin-right: 20px;
   width: 100%; /*best practice to set in a div and set width to 100%*/
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
 }
 
+@media screen and (max-width: 800px) {
+  .project {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .project {
+    flex: 100%;
+    max-width: 100%;
+  }
+}

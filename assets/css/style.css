@@ -167,6 +167,23 @@ u{
   vertical-align: middle;
   width: 100%;
 }
+/*contact section*/
+.contact{
+  padding-bottom: 100px;
+  align-content: center;
+}
+.contact-info{
+  border: 8px solid var(--statement);
+  border-radius: 15px;
+  margin: 5px;
+  background: var(--tertiary);
+  display: flex;
+  justify-content: center;
+  margin:5% ;
+  flex: 1;
+  height: 120px;
+  width: 90%;
+}
 footer{
   background: var(--secondary);
   display: flex;

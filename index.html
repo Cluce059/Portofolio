@@ -32,11 +32,10 @@
 <section class = "hero">
 </section>
 <!--about me-->
-<!--see if u can move this to the left...-->
-<div class = "flex-column">
-    <h2 class = "primary-border">About Me</h2>
-</div>
 <section id="about-me" class = "about">
+    <div class = "flex-row"><!--FORMERLY KNOW AS FLEX_ROW or column PLS CHANGE CSS ACORDINGLY TY-->
+        <h2 class = "section-title">About Me</h2> <!--Formorly classes as something else lol pls be careful-->
+    </div>
     <!--about me div-->
     <div class="about-info">
         <!--about me text-->
@@ -52,28 +51,37 @@
 </section>
 <!--work portfolio-->
 <!--section to the left of work pannels-->
-<div class = "flex-column">
-        <h2>My Work</h2>
-</div> 
 <!--my work-->
-<div class="projects">
-    <div class="project">
-        <h3>Run Buddy</h3>
-      <img src="./assets/images/Run-buddy.jpg" alt=""/>
+<section id = "my-work" class="my-work">
+    <div class = "flex-row">
+        <h2 class="section-title">My Work</h2><!--see if u can move this to the left...-->
+    </div> 
+    <div class="projects">
+        <div class="project">
+            <h3>Run Buddy</h3>
+          <img src="./assets/images/Run-buddy.jpg" alt=""/>
+          </div>
+        <div class="project">
+            <h3>Horizeon</h3>
+          <img src="./assets/images/Horizeon.png" alt=""/>
+        </div>
+        <div class="project">
+            <h3>More to Come!</h3>
+          <img src="./assets/images/dino.jpg" alt=""/>
+        </div>
       </div>
-    <div class="project">
-        <h3>Horizeon</h3>
-      <img src="./assets/images/Horizeon.png" alt=""/>
-    </div>
-    <div class="project">
-        <h3>Project 3</h3>
-      <img src="./assets/images/dino.jpg" alt=""/>
-    </div>
-  </div>
+</section>
 <!--contact me-->
 <section id="contact" class = "contact">
-    <div class = "contact-box">
-        <a></a>
+    <div class = "flex-row">
+        <h2 class="section-title">Get in Touch</h2>
+    </div>
+    <div class="contact-info">
+        <ul>
+            <li>Email: <u>Cluce059@gmail.com</u></li>
+            <li>Cell: (850)408-6736</li>
+            <li>Based in Orlando, FL</li>
+        </ul>
     </div>
 </section>
 <!--footer-->

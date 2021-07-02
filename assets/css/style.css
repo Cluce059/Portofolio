@@ -13,6 +13,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*header + nav bar*/
 header{
   padding: 20px 35px;
   background-color: var(--secondary);
@@ -65,6 +69,7 @@ header nav{
   font-weight: lighter;
   text-shadow: none;
 }
+/*hero*/
 .hero{
   margin: inherit;
   padding: 50px;
@@ -76,10 +81,11 @@ header nav{
   background-attachment: fixed;
   background-position: 80%;
 }
+/*about me section*/
 .about{
   border-radius: 15px;
   background-color:var(--tertiary);
-  display: flex;
+  display: block;
   border: 10px solid var(--statement);
   margin: 5px;
 }
@@ -108,11 +114,22 @@ header nav{
   border-radius: 15px;
   margin: 5px;
 }
-.flex-column{
+/*section title class and its div  container*/
+.flex-row{
   display: flex;
-  padding: 20px;
-  border: 9px solid var(--statement);
-  border-radius:  15px;
+}
+.section-title{
+  font-style: oblique;
+  font-size: 50px;
+  text-shadow: rgba(0 0 0 0.5);
+  color: var(--secondary);
+  border-bottom: 2px solid var(--primary);
+  text-align: center;
+  padding-bottom: 15px;
+  margin: 0 auto 25px auto ;
+}
+u{
+  text-decoration: underline;
 }
 .text-container{
   border: none;
@@ -122,13 +139,13 @@ header nav{
 }
 .projects{
   border-radius: 15px;
-  border-color: var(--primary);
+  border: 8px solid var(--statement);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   width: 100%;
   background:var(--tertiary);
-  margin:0 auto;
+  margin: 5px;
   padding: 0 4px;
 }
 .project{

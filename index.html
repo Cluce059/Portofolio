@@ -36,25 +36,24 @@
 </section>
 <!--about me-->
 <section id="about-me" class = "about">
-    <div class = "flex-row"><!--FORMERLY KNOW AS FLEX_ROW or column PLS CHANGE CSS ACORDINGLY TY-->
+    <div class = "flex-row"><!--flex-row is used point to the section title and adjust its flexbox-->
         <h2 class = "section-title">About Me</h2> <!--Formorly classes as something else lol pls be careful-->
     </div>
     <!--about me div-->
     <div class="about-info">
         <!--about me text-->
         <div class = "text-container">
-            <div class = "profile-text">
-                <p>Hello! My name is Caroline and I am excited to share with you my background and experience. I graduated from the University of Central Florida last may with a bachelor's degree in Environmental Studies and a certificate in Geographic Information Systems. I have many endeavors from making glass art in my spare time to continuing my education in computer science. After a busy day, I like to take time off to play games and have coffee on my porch with my cat. Reach out via phone or email if you have any questions or just want to say hey!</p>
-            </div>
             <div class = "profile-img">
                 <img src = "./assets/images/me.jpg" alt = "Caroline Luce profile photo"/>
+            </div>
+            <div class = "profile-text">
+               
+                <p>Hello! My name is Caroline and I am excited to share with you my background and experience. I graduated from the University of Central Florida last May with a bachelor's degree in Environmental Studies and a certificate in Geographic Information Systems. I have many endeavors from making glass art in my spare time to continuing my education in computer science. After a busy day, I like to take time off to play games and have coffee on my porch with my cat. Reach out via phone or email if you have any questions or just want to say hey!</p>
             </div>
         </div>   
     </div>
 </section>
 <!--work portfolio-->
-<!--section to the left of work pannels-->
-<!--my work-->
 <section id = "my-work" class="my-work">
     <div class = "flex-row">
         <h2 class="section-title">My Work</h2>
@@ -62,12 +61,12 @@
     <div class="projects">
         <div class="project">
             <h3>Run Buddy</h3>
-            <a href = "https://cluce059.github.io/run-buddy/">
+            <a href = "https://cluce059.github.io/run-buddy/"> <!--this is how you link an img-->
                 <img src= "./assets/images/Run-buddy.jpg" alt="Run Buddy Website"> 
             </a>
           </div>
         <div class="project">
-            <h3>Horizeon</h3>
+            <h3>Horiseon</h3>
             <a href = "https://cluce059.github.io/Horiseon/">
                 <img src="./assets/images/Horizeon.png" alt="Horiseon Website"/>
             </a>
@@ -88,7 +87,7 @@
     <div class="contact-info">
         <ul>
             <li>
-                <h3>Email: <u>Cluce059@gmail.com</u></h3>
+                <h3>Email: <u>Cluce059@gmail.com</u></h3> <!--u is used here to open mail app when clicked-->
                 <a class = "email-link" href = "mailto:Cluce059@gmail.com">Click here to shoot me an email!</a>
             </li>
             <li>
@@ -103,7 +102,7 @@
 <!--footer-->
 <footer>
     <div class = "resume" id = "resume">
-        <a href = "./assets/files/Luce_Resume.A.pdf">My Resume</a>
+        <a href = "./assets/files/Luce_Resume.A.pdf">My Resume</a> <!--relative path to resume in this project folder-->
     </div>
 </footer>
 </body>

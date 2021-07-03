@@ -103,7 +103,7 @@ header nav{
   display: flex;
   height: 150px;
   width: 100px;
-  flex:1 30%;
+  flex:1 30%; /*set to 100% width then play w div width to change its size up same w the 1st project*/
 }
 .profile-img img{
   border: 5px solid var(--statement);
@@ -253,5 +253,11 @@ footer a:hover{
   .project {
     flex: 100%;
     max-width: 100%;
+  }
+}
+@media screen and (max-width: 400px){
+  .project{
+    flex: 120%;
+    max-width: 120% ;
   }
 }

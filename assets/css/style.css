@@ -1,7 +1,7 @@
 :root{
   --primary: rgb(66, 42, 59); 
   --secondary: rgb(199, 103, 199);
-  --tertiary: rgb(97, 124, 133) ;
+  --tertiary: rgb(97, 124, 133, 0.25) ;
   --statement: rgb(29, 28, 28);
 }
 *{
@@ -81,35 +81,59 @@ header nav{
 }
 /*about me section*/
 .about{
-  border-radius: 15px;
-  background-color:var(--tertiary);
   display: block;
-  border: 10px solid var(--statement);
   margin: 5px;
 }
 .about-info{
-  justify-content: center;
+  border: 2.5px solid black;
+  border-radius: 8px;
 }
+/*
 .profile-text{
   text-align: left;
   line-height: 1.5;
   color: black;
   width: 90%;
-  display: inline-block; /*fixes offset nature of onlny 90% width*/
+  display: inline-block; /*fixes offset nature of onlny 90% width
   font-size: 22px;
   margin: 0 auto;
 }
+*/
+.about-container{
+  margin: 5px;
+  text-align: center;
+  line-height: 1.5;
+  color: black;
+  width: 90%;
+  display: inline-block; /*fixes offset nature of onlny 90% width
+  font-size: 22px;
+  margin: 0 auto;*/ 
+}
+.about-container p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  text-align:inherit;
+}
 .profile-img{
   display: flex;
-  height: 150px;
-  width: 100px;
-  flex:1 30%; /*set to 100% width then play w div width to change its size up same w the 1st project*/
-}
-.profile-img img{
-  border: 5px solid var(--statement);
-  margin: 5px;
   justify-content: center;
   align-items: center;
+}
+.profile-img img{
+  /*
+  border: 5px solid var(--statement);
+  margin: 5px;
+   justify-content: center;
+  align-items: center;
+  width: 100%; /*set to 100% width then play w div width to change its size up same w the 1st project*/
+  /*padding: 0 auto ; 
+  margin: 0 auto;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  height: 200px;
+  width: 200px;
 }
 /*section title class and its div  container*/
 .flex-row{
@@ -135,15 +159,17 @@ u{
   border-color: black;
 }
 .projects{
-  border-radius: 15px;
-  border: 8px solid var(--statement);
+  border: 2.5px solid black;
+  border-radius: 8px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   width: 100%;
   background:var(--tertiary);
+  padding: 45px 12px 5px;
+}
+.my-work{
   margin: 5px;
-  padding: 0 4px;
 }
 .project{
   flex: 60%;
@@ -182,16 +208,22 @@ u{
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
+  height: 85px:
+}
+.first-project{
+  height: 190px;
+  width: 190px;
 }
 /*contact section*/
 .contact{
   padding-bottom: 100px;
   align-content: center;
+  margin: 5px;
+  
 }
 .contact-info{
-  border: 8px solid var(--statement);
-  border-radius: 15px;
-  margin: 5px;
+  border: 2.5px solid black;
+  border-radius: 8px;
   background: var(--tertiary);
   display: flex;
   justify-content: center;

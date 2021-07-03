@@ -4,10 +4,6 @@
   --tertiary: rgb(97, 124, 133) ;
   --statement: rgb(29, 28, 28);
 }
-* {
-  margin: 0;
-  padding: 0;
-}
 *{
   margin: 0;
   padding: 0;
@@ -15,6 +11,7 @@
 }
 body{
   font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
 }
 /*header + nav bar*/
 header{
@@ -64,10 +61,13 @@ header nav{
   text-shadow: var(--statement);
 }
 .navbar-container ul li a:hover{
+
   color: var(--pink);
   padding: 10px 15px;
   font-weight: lighter;
   text-shadow: none;
+  background: var(--tertiary);
+  border-radius: 20px;
 }
 /*hero*/
 .hero{
@@ -89,6 +89,9 @@ header nav{
   border: 10px solid var(--statement);
   margin: 5px;
 }
+.about-info{
+  justify-content: center;
+}
 .profile-text{
   text-align: left;
   line-height: 1.5;
@@ -105,14 +108,9 @@ header nav{
   flex:1 30%;
 }
 .profile-img img{
-  border: 8px solid var(--statement);
-  border-radius: 15px;
+  border: 5px solid var(--statement);
   margin: 5px;
-}
-.profile-img img:hover{
-  border: 8px solid var(--statement);
-  border-radius: 15px;
-  margin: 5px;
+  justify-content: space-around;
 }
 /*section title class and its div  container*/
 .flex-row{
@@ -122,7 +120,7 @@ header nav{
   font-style: oblique;
   font-size: 50px;
   text-shadow: rgba(0 0 0 0.5);
-  color: var(--secondary);
+  color: var(--primary);
   border-bottom: 2px solid var(--primary);
   text-align: center;
   padding-bottom: 15px;
@@ -158,6 +156,24 @@ u{
   gap: 10px;
   grid-auto-rows: 100px;*/
 }
+.project:hover{
+  position:relative;
+  top:-25px;
+  left:-35px;
+  width:500px;
+  height:auto;
+  display:block;
+}
+/*make first project appear big*/
+.big-img{
+  max-width: 500px;
+  width: 100%;
+}
+.project-title{
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
 .project img{
   /*align-items: flex-start;
   flex: 1 12%;
@@ -184,11 +200,31 @@ u{
   height: 120px;
   width: 90%;
 }
+.contact-info ul{
+
+}
+.email-link{
+  background: azure;
+  border: 30px;
+  border-radius: 20px;
+  color: var(--primary);
+  font-style: italic;
+  font-size: 22px;
+}
+.email-link:hover{
+  color: azure;
+  background:var(--primary);
+  border: 30px;
+  border-radius: 20px;
+  font-style: italic;
+  font-size: 22px;
+}
 footer{
   background: var(--secondary);
   display: flex;
   flex-wrap: wrap;
   padding: 40px;
+  justify-content: center;
 }
 footer a{
   text-align: center;
@@ -198,6 +234,14 @@ footer a{
   text-decoration: none;
   font-size: 24px;
   padding: solid 12 px var(--secondary);
+}
+footer a:hover{
+  color: var(--pink);
+  padding: 10px 15px;
+  font-weight: lighter;
+  text-shadow: none;
+  background: var(--tertiary);
+  border-radius: 20px;
 }
 @media screen and (max-width: 800px) {
   .project {

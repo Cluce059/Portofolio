@@ -14,3 +14,5 @@ https://cluce059.github.io/Portofolio/
 Made with ❤️ by Caroline Luce
 
 ### ©️copy 2021 CAROLINE lUCE
+
+<img src = "./assets/images/page.jpg>
